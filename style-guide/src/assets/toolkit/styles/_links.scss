@@ -1,0 +1,11 @@
+@import 'typography';
+@import 'variables';
+
+.link {
+  color: $darkGreen;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

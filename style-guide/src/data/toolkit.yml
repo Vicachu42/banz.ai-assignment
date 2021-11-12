@@ -1,0 +1,9 @@
+colors:
+  primary:
+    DarkGreen: "#203E0A"
+    BrightGreen: "#5DA140"
+    LightGreen: "#97AB75"
+    LightGrey: "#DDD9DC"
+    DarkBrown: "#3F2D1C"
+    White: "#FFF"
+    Black: "#000"
