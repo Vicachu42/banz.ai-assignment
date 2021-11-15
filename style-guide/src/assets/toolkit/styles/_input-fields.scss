@@ -1,0 +1,16 @@
+@import 'variables';
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 343px;
+  height: 46px;
+  border: 2px solid $black;
+}
+
+.label {
+  margin-bottom: 0.6rem;
+}

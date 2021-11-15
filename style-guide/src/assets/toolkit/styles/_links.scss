@@ -9,3 +9,13 @@
     cursor: pointer;
   }
 }
+
+.nav {
+  color: $white;
+  text-decoration: none;
+  margin-bottom: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
