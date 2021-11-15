@@ -1,0 +1,119 @@
+@import 'mixins';
+@import 'variables';
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: $darkGreen;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+
+    &__logo {
+      @include nav-bar;
+      width: 295px;
+    }
+
+    &__links {
+      @include nav-bar;
+      width: 400px;
+    }
+  }
+}
+
+.home-card {
+  @include room-info;
+  width: 395px;
+  height: 468px;
+  margin-bottom: 1rem;
+    
+  &__image-ph {
+    background-color: $lightGreen;
+    width: 365px;
+    height: 205px;
+  }
+
+  hr {
+    border: 1px solid $brightGreen;
+    width: 295px;
+    position: absolute;
+    left: 15px;
+    top: 260px;
+  }
+}
+
+.room-listing {
+  @include room-info;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1.5rem;
+  width: 1240px;
+  height: 300px;
+
+    &__image-ph {
+    background-color: $lightGreen;
+    width: 448px;
+    height: 264px;
+  }
+
+  &__room {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    hr {
+      border: 1px solid $brightGreen;
+      width: 295px;
+      position: absolute;
+      left: 488px;
+      top: 40px;
+    }
+
+    &__book {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.footer {
+  background-color: $darkBrown;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 320px;
+
+    &__container {
+      display: grid;
+      grid-template-areas: 'title title title'
+      'info links1 links2';
+      width: 1000px;
+
+      &__title {
+        grid-area: title;
+      }
+
+      &__info {
+        grid-area: info;
+      }
+
+      &__links1 {
+        grid-area: links1;
+      }
+
+      &__links2 {
+        grid-area: links2;
+      }
+    }
+}
