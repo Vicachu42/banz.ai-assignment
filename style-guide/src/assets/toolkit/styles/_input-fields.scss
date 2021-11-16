@@ -1,14 +1,24 @@
 @import 'variables';
 
+.search-dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 3rem 0 4rem 0;
+}
+
 .input-fields {
   display: flex;
   flex-direction: column;
+  margin-right: 1rem;
 }
 
 .input {
   width: 343px;
   height: 46px;
   border: 2px solid $black;
+  box-sizing: border-box;
 }
 
 .label {

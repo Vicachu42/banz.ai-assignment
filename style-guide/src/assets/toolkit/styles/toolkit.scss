@@ -10,6 +10,54 @@
 @import 'typography';
 @import 'variables';
 
+body {
+  margin: 0;
+}
+
+.products {
+  background-color: $lightGrey;
+  width: 100%;
+
+  &__container {
+    @include layout-grid;
+    width: 1000px;
+    margin: 3rem auto 3rem auto;
+    padding: 0 0 4rem 0;
+
+    &__heading {
+      grid-column: auto / span 4;
+    }
+
+/*     .link {
+      float: right;
+    } */
+  }
+}
+
+.info-block {
+  &__container {
+    width: 1000px;
+    margin: 3rem auto;
+  }
+}
+
+.logotype {
+  width: 60px;
+  height: 60px;
+}
+
+.header-image {
+  width: 100%;
+}
+
+.info-pic {
+  width: 605px;
+  height: 317px;
+  margin: 0 0 1rem 1.5rem;
+  float: right;
+}
+
+//Only for style guide
 .logo-placeholder {
   background: $white;
   width: 60px;
