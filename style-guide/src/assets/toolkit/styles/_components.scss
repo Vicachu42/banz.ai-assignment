@@ -49,14 +49,38 @@
 
 .home-card {
   @include room-info;
+  min-width: 300px;
+  max-width: 395px;
+  height: auto;
+  margin-bottom: 1rem;
+  
+    &__image {
+    width: 100%;
+    height: auto;
+  }
+    
+  &__image-ph {
+    background-color: $lightGreen;
+    width: 100%;
+    height: 205px;
+  }
+
+  .info {
+    border-top: 1px solid $brightGreen;
+    width: 250px;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+  }
+}
+
+/* .home-card {
+  @include room-info;
   width: 395px;
   height: 468px;
   margin-bottom: 1rem;
 
   &__image {
     width: 100%;
-/*     width: 365px;
-    height: 205px; */
   }
     
   &__image-ph {
@@ -71,9 +95,48 @@
     margin-top: 0.5rem;
     padding-top: 0.5rem;
   }
-}
+} */
 
 .room-listing {
+  @include room-info;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  min-width: 800px;
+  max-width: 1240px;
+  height: auto;
+
+  &__image-ph {
+    background-color: $lightGreen;
+    width: 448px;
+    height: auto;
+  }
+
+  &__room {
+    h2 {
+      margin: 0 0 0.5rem 0;
+    }
+
+    .info {
+      border-top: 1px solid $brightGreen;
+      width: 250px;
+      margin-top: 0.5rem;
+      padding-top: 0.5rem;
+    }
+
+    &__book {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      .button {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+/* .room-listing {
   @include room-info;
   display: grid;
   grid-template-columns: auto auto;
@@ -107,7 +170,7 @@
       flex-direction: row;
     }
   }
-}
+} */
 
 .footer {
   background-color: $darkBrown;
@@ -140,15 +203,6 @@
       &__links2 {
         grid-area: links2;
       }
-
-/*       @media only screen and (max-width: 875px) {
-        grid-auto-columns: 1fr;
-        grid-template-areas: 'title'
-        'info'
-        'links1'
-        'links2';
-        gap: 1rem;
-      } */
     }
 
     @media only screen and (max-width: 875px) {

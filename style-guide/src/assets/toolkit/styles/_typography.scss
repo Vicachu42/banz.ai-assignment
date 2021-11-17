@@ -26,6 +26,14 @@ h2 {
   letter-spacing: 0.025em;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 .link {
   font-family: 'Maven Pro', sans-serif;
   font-weight: 700;
@@ -40,6 +48,12 @@ h2 {
   font-size: 1rem;
   line-height: 1rem;
   letter-spacing: 2.5%;
+}
+
+li {
+  font-weight: 500;
+  line-height: 1.3rem;
+  letter-spacing: 2,5%;
 }
 
 .logo {
