@@ -6,6 +6,15 @@
   justify-content: center;
   align-items: flex-end;
   margin: 3rem 0 4rem 0;
+
+  @media only screen and (max-width: 875px) {
+    flex-direction: column;
+    align-items: center;
+
+    .input {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 .input-fields {

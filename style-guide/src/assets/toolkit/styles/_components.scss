@@ -15,6 +15,7 @@
     justify-content: space-between;
     align-items: center;
     width: 1000px;
+    padding: 1rem;
 
     &__logo {
       @include nav-bar;
@@ -25,6 +26,24 @@
       @include nav-bar;
       width: 400px;
     }
+
+    &__icon {
+      display: none;
+    }
+
+    @media only screen and (max-width: 750px) {
+      &__links {
+        display: none;
+      }
+
+      &__icon {
+        display: contents;
+      }
+    }
+  }
+
+  .nav-icon {
+    height: 2rem;
   }
 }
 
@@ -35,8 +54,9 @@
   margin-bottom: 1rem;
 
   &__image {
-    width: 365px;
-    height: 205px;
+    width: 100%;
+/*     width: 365px;
+    height: 205px; */
   }
     
   &__image-ph {
@@ -103,6 +123,7 @@
       grid-template-areas: 'title title title'
       'info links1 links2';
       width: 1000px;
+      padding: 1rem;
 
       &__title {
         grid-area: title;
@@ -118,6 +139,26 @@
 
       &__links2 {
         grid-area: links2;
+      }
+
+/*       @media only screen and (max-width: 875px) {
+        grid-auto-columns: 1fr;
+        grid-template-areas: 'title'
+        'info'
+        'links1'
+        'links2';
+        gap: 1rem;
+      } */
+    }
+
+    @media only screen and (max-width: 875px) {
+      height: 550px;
+
+      &__container {
+        grid-template-areas: 'title'
+        'info'
+        'links1'
+        'links2';
       }
     }
 }

@@ -22,7 +22,7 @@ body {
     @include layout-grid;
     width: 1000px;
     margin: 3rem auto 3rem auto;
-    padding: 0 0 4rem 0;
+    padding: 0 1rem 4rem 1rem;
 
     &__heading {
       grid-column: auto / span 4;
@@ -31,13 +31,6 @@ body {
 /*     .link {
       float: right;
     } */
-  }
-}
-
-.info-block {
-  &__container {
-    width: 1000px;
-    margin: 3rem auto;
   }
 }
 
@@ -50,9 +43,27 @@ body {
   width: 100%;
 }
 
+.info-block {
+  &__container {
+    min-width: 350px;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 1rem;
+
+    @media screen and (max-width: 875px) {
+      .info-pic {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        float: none;
+      }
+    }
+  }
+}
+
 .info-pic {
   width: 605px;
-  height: 317px;
+  height: auto;
   margin: 0 0 1rem 1.5rem;
   float: right;
 }
