@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-.our-rooms-body {
+.grey {
   background-color: $lightGrey;
 }
 
@@ -156,6 +156,30 @@ body {
     box-sizing: border-box;
   }
 }
+
+#book-headline {
+  width: 1000px;
+  margin: 3rem auto 3rem auto;
+  padding-left: 1rem;
+}
+
+/* .book-stay {
+  width: 100%;
+  margin: 3rem 0 4rem 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1000px;
+
+    &__input {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  }
+} */
 
 .icons {
   width: 20px;
