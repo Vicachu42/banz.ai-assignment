@@ -1,4 +1,4 @@
-# banz.ai-assignment
+# bonz.ai-assignment
 
 Individual assignment in the Frontend UX/UI course. In this task we are supposed to build a website based on a Figma prototype created in a previous assignment. It must be built using HTML and Sass with a design system in Fabricator.
 
