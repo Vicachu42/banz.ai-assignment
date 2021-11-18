@@ -49,12 +49,12 @@
 
 .home-card {
   @include room-info;
-  min-width: 300px;
-  max-width: 395px;
+  min-width: 280px;
+  max-width: 300px;
   height: auto;
-  margin-bottom: 1rem;
+  margin: 0.5rem;
   
-    &__image {
+  &__image {
     width: 100%;
     height: auto;
   }
@@ -97,14 +97,21 @@
   }
 } */
 
-.room-listing {
+.room-card {
   @include room-info;
   display: grid;
   grid-template-columns: auto auto;
+  grid-auto-rows: auto;
   gap: 1rem;
-  min-width: 800px;
+  min-width: 300px;
   max-width: 1240px;
   height: auto;
+  margin-bottom: 1rem;
+
+  &__image {
+    width: 448px;
+    height: 100%;
+  }
 
   &__image-ph {
     background-color: $lightGreen;
@@ -132,6 +139,25 @@
       .button {
         margin-left: 0.5rem;
       }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: auto;
+
+    &__image {
+/*       min-width: 220px;
+      max-width: 448px; */
+      width: 100%;
+      height: auto;
+    }
+
+    &__image-ph {
+      background-color: $lightGreen;
+/*       min-width: 220px;
+      max-width: 448px; */
+      width: 100%;
+      height: auto;
     }
   }
 }
@@ -206,7 +232,7 @@
     }
 
     @media only screen and (max-width: 875px) {
-      height: 550px;
+      height: 520px;
 
       &__container {
         grid-template-areas: 'title'

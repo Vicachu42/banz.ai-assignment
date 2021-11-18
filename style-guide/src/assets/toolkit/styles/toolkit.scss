@@ -14,27 +14,43 @@ body {
   margin: 0;
 }
 
+.our-rooms-body {
+  background-color: $lightGrey;
+}
+
 .home-listing {
   background-color: $lightGrey;
   width: 100%;
 
-  &__container {
-    @include home-grid;
+  &__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
     max-width: 1000px;
-    margin: 3rem auto 3rem auto;
+    margin: 3rem auto 0 auto;
+    padding: 0 1rem 0 1rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto 3rem auto;
     padding: 0 1rem 4rem 1rem;
 
-    &__heading {
+/*     &__heading {
       grid-column: auto / span 3;
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-    }
-
-/*     @media screen and (max-width: 1000px) {
-      grid-template-columns: 1fr 1fr;
     } */
   }
+
+/*   @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  } */
 }
 
 /* .products {
@@ -56,6 +72,17 @@ body {
     }
   }
 } */
+
+.room-listing {
+  background-color: $lightGrey;
+  width: 100%;
+
+  &__container {
+    max-width: 1000px;
+    margin: 3rem auto 3rem auto;
+    padding: 0 1rem 4rem 1rem;
+  }
+}
 
 .logotype {
   width: 60px;
@@ -128,6 +155,10 @@ body {
     box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
   }
+}
+
+.icons {
+  width: 20px;
 }
 
 .env-logos {
